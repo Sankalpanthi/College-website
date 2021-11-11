@@ -1,0 +1,261 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.header{
+  min-height: 100vh;
+  width:100%;
+  background-image: linear-gradient(rgba(4,9,20,0.7),rgba(4,9,20,0.7)),url(https://spiderimg.amarujala.com/assets/images/2020/06/12/750x506/graphic-era_1591941400.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.header-text{
+  width:90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%,-50%); /* to put it in centre of div*/
+}
+.header-text h1{
+  font-size: 62px;
+}
+.header-text p{
+  font-size: 24px;
+}
+
+/* Navigation Bar */
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  mix-blend-mode: multiply;/* to make the background transparent */
+  width: 150px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+}
+.nav-links ul li a:hover{
+  font-weight: bold;
+}
+nav .fa{
+  display: none;/*  to remove cross and nav icon in big screens */
+}
+@media (max-width: 768px) {
+  html , body{
+    overflow-x: hidden;
+  }
+    .header-text h1{
+      font-size: 48px;
+    }
+    .nav-links ul li{
+      display: block;
+    }
+    .nav-links{
+      position: absolute;
+      background: #f44336;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+      transition: 1s;
+    }
+    nav .fa{
+      display: inline-block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+}
+/* Courses section */
+
+.course{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+h1{
+  font-size: 36px;
+  font-weight: 400;
+}
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+p{
+  color: #777;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 10px;
+}
+.col{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col{
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+.course-col:hover{
+  box-shadow: 0 0 20px 0px rgba(255, 0, 0, 0.5);
+  transition: 0.5s;
+}
+@media (max-width: 768px) {
+  .col{
+    display: block;
+  }
+}
+
+/* campus section*/
+
+.campus{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.campus-col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+}
+.campus-col img{
+  height: 100%;
+  width: 100%;
+}
+.img-hover{
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.img-hover:hover{
+  transition: 0.5s;
+  background: rgba(0, 0, 150, 0.5);
+}
+.img-hover h3{
+  width: 100%;
+  font-weight: 600;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  opacity: 0;
+}
+.img-hover:hover h3{
+  bottom: 50%;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+/* facilities section*/
+
+.facilities{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.facilities-col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.facilities-col img{
+  /* height: 100%; */
+  width: 100%;
+  border-radius: 10px;
+}
+.facilities-col p{
+  padding: 0;
+}
+.facilities-col h3{
+  margin: 15px 0;
+  text-align: left;
+}
+
+/* call to action section */
+.cta{
+  margin: 100px auto;
+  width:80%;
+  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(https://i.pinimg.com/564x/8c/f0/81/8cf08192fe9e441ac86d334667043e41.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0px 0 500px;
+  position: relative;
+}
+.cta h1{
+  color: #fff;
+  padding-top: 20px;
+}
+.custom-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.custom-button:hover{
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 1s;
+}
+
+/* footer section */
+
+.footer{
+  width: 100%;
+  text-align: center;
+  padding: 30px 0;
+}
+.footer h4{
+  margin: 20px auto;
+  font-weight: 600;
+}
+.footer-link {
+  margin: 10px;
+  color: #000;
+}
