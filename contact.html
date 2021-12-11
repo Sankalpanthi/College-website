@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>College Website</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;900&family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/89ae628d0a.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <section class="a-header">
+    <nav>
+      <a href="index.html"><img src="https://pbs.twimg.com/profile_images/976683214201765888/Wy4LUm8Q_400x400.jpg" alt="graphic-logo"></a>
+      <div class="nav-links"  id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="course.html">Course</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Contact Us</h1>
+  </section>
+
+  <section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.8949113135923!2d77.99259931553915!3d30.26857531490373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092b9451ae8dfd%3A0xf39c46d34a152faa!2sGraphic%20Era%20(Deemed%20to%20be%20University)!5e0!3m2!1sen!2sin!4v1639214977874!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.7287781163946!2d77.99759041553924!3d30.27330811467879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39092bca3fc0ccf3%3A0xd19900de8c24dbee!2sGraphic%20Era%20Hill%20University!5e0!3m2!1sen!2sin!4v1639215110684!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.8253645281907!2d79.52851671552575!3d29.375402156820098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0987622d2a7f3%3A0x8a1cf97c55e9e156!2sGraphic%20Era%20Hill%20University%20-%20Bhimtal%20Campus!5e0!3m2!1sen!2sin!4v1639215156781!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <section class="contact-us">
+    <div class="col">
+      <div class="c-col">
+        <div>
+          <i class="fa fa-home"></i>
+          <span>
+            <h5>xyz road,abc building</h5>
+            <p>Dehradun, Uttarakhand, India</p>
+          </span>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <span>
+            <h5>+9876543210</h5>
+            <p>Open Monday to Saturday, 9AM to 5PM</p>
+          </span>
+        </div>
+        <div>
+          <i class="fa fa-envelope-o"></i>
+          <span>
+            <h5>graphicera@gmail.com</h5>
+            <p>Email us your Query</p>
+          </span>
+        </div>
+      </div>
+      <div class="c-col">
+        <form class="" action="mailto: sankalpanthi@gmail.com" method="post">
+          <label>Your Name:</label>
+          <input type="text" name="yourName" value="" required><br>
+          <label>Your Email:</label>
+          <input type="email" name="yourEmail" value="" required><br>
+          <label>Your Message:</label><br>
+          <textarea name="yourMessage" rows="10" cols="30" required></textarea><br>
+          <button type="submit" class="custom-button a-button"name="">Send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
+    <div class="icons">
+      <a href="https://twitter.com/GEU_Official?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="footer-link fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/geuofficial/"><i class="footer-link fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/geuofficial/?hl=en"><i class="footer-link fab fa-instagram"></i></a>
+      <a href="mailto:enquiry@geu.ac.in"><i class="footer-link fas fa-envelope"></i></a>
+    <p>© Copyright 2021 Sankalpanthi</p>
+    </div>
+  </section>
+  <!-- Javascript for toggle menu -->
+  <script type="text/javascript">
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+      navLinks.style.right = "0";
+    }
+    function hideMenu()
+    {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+
+</html>

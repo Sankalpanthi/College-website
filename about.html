@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>College Website</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;900&family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/89ae628d0a.js" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <section class="a-header">
+    <nav>
+      <a href="index.html"><img src="https://pbs.twimg.com/profile_images/976683214201765888/Wy4LUm8Q_400x400.jpg" alt="graphic-logo"></a>
+      <div class="nav-links"  id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="course.html">Course</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+  </section>
+  <section class="a-content">
+    <div class="col">
+      <div class="a-col">
+        <img src="https://qph.fs.quoracdn.net/main-qimg-35e82413087d45f0c743041be09cfc48" alt="about-img">
+      </div>
+      <div class="a-col">
+        <h1>Uttarakhand's best Private University</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+          aute irure dolor in reprehenderit in voluptate velit esse cillum dolo</p>
+          <a href="https://en.wikipedia.org/wiki/Graphic_Era#:~:text=Graphic%20Era%20was%20founded%20in,the%20status%20of%20deemed%20university." class="custom-button a-button">EXPLORE NOW</a>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis</p>
+    <div class="icons">
+    <a href="https://twitter.com/GEU_Official?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="footer-link fab fa-twitter"></i></a>
+    <a href="https://www.facebook.com/geuofficial/"><i class="footer-link fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/geuofficial/?hl=en"><i class="footer-link fab fa-instagram"></i></a>
+    <a href="mailto:enquiry@geu.ac.in"><i class="footer-link fas fa-envelope"></i></a>
+    <p>© Copyright 2021 Sankalpanthi</p>
+    </div>
+  </section>
+  <!-- Javascript for toggle menu -->
+  <script type="text/javascript">
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+      navLinks.style.right = "0";
+    }
+    function hideMenu()
+    {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+
+</html>
