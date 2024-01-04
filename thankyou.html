@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>College Website</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;900&family=Ubuntu&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/89ae628d0a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/logo.jpeg" alt="graphic-logo"></a>
+      <div class="nav-links"  id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="course.html">Course</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="header-text">
+      <h1>Thank You for Contacting Us</h1>
+      <p>We will try to get back to you as soon as we possibly can.</p>
+    </div>
+  </section>
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>GEU stands proud as the only university in Uttarakhand recognized as one among the top 100 Universities of the country, as an abode of learning and excellence, surpassing all parameters of assessment like teaching, learning, research, graduation outcome, outreach, industrial presence and more for Indian Institutions of higher education.</p>
+    <div class="icons">
+      <a href="https://twitter.com/GEU_Official?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="footer-link fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/geuofficial/" target="_blank"><i class="footer-link fab fa-facebook-f"></i></a>
+      <a href="https://www.instagram.com/geuofficial/?hl=en" target="_blank"><i class="footer-link fab fa-instagram"></i></a>
+      <a href="mailto:enquiry@geu.ac.in" target="_blank"><i class="footer-link fas fa-envelope"></i></a>
+    <p>© Copyright 2021 Sankalpanthi</p>
+    </div>
+  </section>
+  <!-- Javascript for toggle menu -->
+  <script type="text/javascript">
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+      navLinks.style.right = "0";
+    }
+    function hideMenu()
+    {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+
+</html>
